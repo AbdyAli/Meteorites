@@ -268,7 +268,7 @@ def update():
     #loops through lasers array and updates all laser objects
     for laser in lasers:
         laser.update()
-        if laser.get_y() < 0:
+        if laser.get_y() == 0:
             del laser
 
     #loops through meteorites array and updates all meteorite objects
